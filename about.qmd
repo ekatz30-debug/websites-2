@@ -2,4 +2,6 @@
 title: "About"
 ---
 
-About this site
+## About Me
+My name is **Ethan Katz**, and I attend *New College of Florida*.
+[Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info)
