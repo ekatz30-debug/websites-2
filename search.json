@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Billboard Graphic",
+    "section": "",
+    "text": "library(tidyverse)\n\n\nbillboard |&gt;\n  pivot_longer(\n    cols = starts_with(\"wk\"),\n    names_to = \"week\",\n    values_to = \"rank\",\n    values_drop_na = TRUE\n  ) |&gt;\n  mutate(week = parse_number(week)) |&gt;\n  ggplot(aes(x = week, y = rank, group = track)) +\n  geom_line(alpha = 0.25, color = \"steelblue\") +\n  scale_y_reverse() +\n  theme_minimal() +\n  labs(\n    title = \"Billboard Top 100 Song Trajectories\",\n    subtitle = \"Rank progression over weeks on the chart\",\n    x = \"Week\",\n    y = \"Rank (Lower is better)\"\n  )"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
